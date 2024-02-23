@@ -1,7 +1,9 @@
 const sumAll = function(from, to) {
+    const max = Math.max(from, to)
+    let min = Math.min(from, to)
     let result = 0
-    for(from; from <= to; from ++){
-        result = result + from
+    for(min; min <= max; min ++){
+        result = result + min
     }
     return result
 
