@@ -22,11 +22,17 @@ const multiply = function(array) {
   return array.reduce((acc, value)=> acc * value)
 };
 
-const power = function() {
-	
+const power = function(num1, num2) {
+	return num1 ** num2
 };
 
-const factorial = function() {
+const factorial = function(num) {
+  let factorial = 1
+  for(let i = num; i > 0; i --){
+    factorial *= i
+  }
+  return factorial
+  
 	
 };
 
